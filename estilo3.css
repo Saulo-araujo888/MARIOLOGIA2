@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4ecff; /* lilás */
+    color:#333;
+    line-height:1.6;
+}
+
+/* ===================================
+   CONTAINER
+=================================== */
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/* ===================================
+   TOPO
+=================================== */
+.topo{
+    background:#d9b8ff;
+    padding:20px 0;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.header-flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-text h1{
+    font-size:32px;
+    color:#5a2d82;
+}
+
+.logo-text p{
+    color:#6e4a91;
+}
+
+/* ===================================
+   MENU SUPERIOR
+=================================== */
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#5a2d82;
+    background:white;
+    padding:10px 14px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    background:#b57edc;
+    color:white;
+}
+
+/* ===================================
+   CONTEÚDO
+=================================== */
+.conteudo{
+    padding:40px 0;
+}
+
+.section-card{
+    background:white;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.section-card h2{
+    font-size:32px;
+    color:#5a2d82;
+    margin-bottom:20px;
+}
+
+.section-card p{
+    margin-bottom:25px;
+}
+
+/* ===================================
+   ÁREA VÍDEO + MENU
+=================================== */
+.media-grid{
+    display:grid;
+    grid-template-columns: 1fr 320px;
+    gap:25px;
+    align-items:start;
+}
+
+.video-wrapper iframe{
+    width:100%;
+    min-height:400px;
+    border:none;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.10);
+}
+
+/* ===================================
+   MENU LATERAL
+=================================== */
+.menu-lateral{
+    background:#f3e5ff;
+    padding:25px;
+    border-radius:12px;
+}
+
+.menu-lateral h3{
+    color:#5a2d82;
+    margin-bottom:18px;
+}
+
+.menu-lateral a{
+    display:block;
+    text-decoration:none;
+    background:white;
+    color:#5a2d82;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:12px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.menu-lateral a:hover{
+    background:#b57edc;
+    color:white;
+}
+
+/* ===================================
+   REDES SOCIAIS
+=================================== */
+.redes{
+    margin-top:20px;
+}
+
+.icon{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.insta{
+    background:#ffffff;
+    color:#c13584;
+}
+
+.whats{
+    background:#ffffff;
+    color:#25d366;
+}
+
+/* ===================================
+   /* Mantém o background atual */
+.rodape{
+    padding: 50px 20px 20px;
+    background-color: #5a2d82;
+}
+
+/* Todas as fontes brancas */
+.rodape,
+.rodape h3,
+.rodape h4,
+.rodape p,
+.rodape a,
+.rodape li,
+.footer-copy{
+    color: #ffffff;
+}
+
+/* Links */
+.rodape a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.rodape a:hover{
+    opacity: 0.8;
+}
+
+/* Grid */
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Lista */
+.footer-coluna ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-coluna ul li{
+    margin-bottom: 8px;
+}
+
+/* WhatsApp */
+.whatsapp-btn{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: rgba(40, 206, 15, 0.823);
+    color: #ffffff;
+}
+
+/* Rodapé final */
+.footer-copy{
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ===================================
+   RODAPÉ
+=================================== */
+.rodape{
+    padding: 50px 20px 20px;
+}
+
+/* ===================================
+   RESPONSIVO
+=================================== */
+@media (max-width: 900px){
+
+    .media-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .header-flex{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links{
+        justify-content: center;
+    }
+
+    .rodape{
+        padding: 35px 15px 15px;
+        text-align: center;
+    }
+
+    .footer-grid{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-coluna{
+        text-align: center;
+    }
+
+    .whatsapp-btn{
+        width: 100%;
+        max-width: 260px;
+        margin: 10px auto;
+    }
+
+    .footer-copy{
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}

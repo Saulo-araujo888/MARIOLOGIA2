@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #fff3e0, #ffe0b2);
+}
+
+/* TOPO */
+.topo {
+    background: #ffcc80;
+    padding: 20px 0;
+    border-bottom: 3px solid;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* LINKS CABEÇALHO COM BORDA */
+
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+.nav-links a {
+    margin: 12px;
+    padding: 10px 14px;
+    border: 1px solid #e65100;
+    text-decoration: none;
+    color: #ece6e6;
+    border-radius: 6px;
+}
+
+.nav-links a:hover {
+    background: #ffa726;
+}
+
+/* CONTEÚDO */
+.section-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* GRID */
+.media-grid {
+    display: flex;
+    gap: 20px;
+}
+
+/* POSTAGEM */
+.postagem {
+    flex: 3;
+}
+
+/* ABAS */
+.abas {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.aba {
+    padding: 10px;
+    border: none;
+    background: #ffb74d;
+    cursor: pointer;
+}
+
+.aba.ativa {
+    background: #fb8c00;
+    color: white;
+}
+
+.conteudo-aba {
+    display: none;
+    padding: 15px;
+    background: #fff8e1;
+    border-radius: 8px;
+}
+
+.conteudo-aba.ativo {
+    display: block;
+}
+
+/* MENU LATERAL DIREITA */
+.menu-lateral {
+    flex: 1;
+}
+
+.menu-lateral a {
+    display: block;
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #e65100;
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+    border-radius: 5px;
+}
+
+.menu-lateral a:hover {
+    background: #ffcc80;
+}
+
+/* RODAPÉ */
+.rodape {
+    background: #ffcc80;
+    padding: 20px;
+}
+
+.rodape a {
+    text-decoration: none;
+    border: none;
+}

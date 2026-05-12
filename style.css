@@ -1,0 +1,263 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #fff3e0, #ffe0b2);
+    color:#333;
+    line-height:1.6;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/* TOPO */
+.topo{
+    background:#ffcc80;
+    border-bottom:3px solid #e65100;
+    padding:20px 0;
+}
+
+.header-flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo-area img{
+    max-width:200px;
+    height:auto;
+}
+
+.logo-text h1{
+    font-size:32px;
+    color:#fff;
+}
+
+.logo-text p{
+    color:#444;
+    font-size:16px;
+}
+
+/* MENU */
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#ece6e6;
+    background:#ffb74d;
+    padding:10px 14px;
+    border-radius:6px;
+    font-weight:bold;
+    border:1px solid #e65100;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    background:#ffa726;
+    color:#000;
+}
+
+/* CONTEÚDO */
+.conteudo{
+    padding:40px 0;
+}
+
+.section-card{
+    background:#ffffff;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.08);
+}
+
+.section-card h2{
+    font-size:32px;
+    margin-bottom:20px;
+    color:#e65100;
+}
+
+.section-card p{
+    margin-bottom:25px;
+    font-size:18px;
+    color:#444;
+}
+
+/* GRID (IGUAL AO ESTILO 2) */
+.media-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    align-items:start;
+}
+
+/* VIDEO */
+.video-wrapper iframe{
+    width:100%;
+    min-height:420px;
+    border:none;
+    border-radius:10px;
+}
+
+/* MENU LATERAL */
+.menu-lateral{
+    background:#fff3e0;
+    padding:25px;
+    border-radius:10px;
+    border:1px solid #e65100;
+}
+
+.menu-lateral h3{
+    color:#e65100;
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.menu-lateral a{
+    display:block;
+    text-decoration:none;
+    color:#000;
+    background:#ffcc80;
+    padding:12px;
+    margin-bottom:12px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.menu-lateral a:hover{
+    background:#ffa726;
+}
+
+/* REDES SOCIAIS */
+.redes{
+    margin-top:25px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.icon{
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#fff;
+}
+
+.insta{
+    background:#c13584;
+}
+
+.whats{
+    background:#25d366;
+}
+
+.icon i{
+    font-size:22px;
+}
+
+/* RODAPÉ */
+.rodape{
+    background:#ffcc80;
+    margin-top:50px;
+    padding:40px 0 20px 0;
+    border-top:3px solid #e65100;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.footer-grid h3,
+.footer-grid h4{
+    color:#e65100;
+    margin-bottom:15px;
+}
+
+.footer-grid p,
+.footer-grid li{
+    color:#444;
+    margin-bottom:10px;
+}
+
+.footer-grid ul{
+    list-style:none;
+}
+
+.footer-grid a{
+    text-decoration:none;
+    color:#000;
+}
+
+.footer-grid a:hover{
+    color:#333;
+}
+
+/* BOTÃO WHATSAPP */
+.whatsapp-btn{
+    display:inline-block;
+    background:#25d366;
+    color:#fff !important;
+    padding:12px 18px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* COPY */
+.footer-copy{
+    margin-top:35px;
+    padding-top:20px;
+    border-top:1px solid #e65100;
+    text-align:center;
+    color:#444;
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+
+    .header-flex{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .logo-area{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        justify-content:center;
+    }
+
+    .media-grid{
+        grid-template-columns:1fr;
+    }
+
+    .redes{
+        flex-direction:row;
+    }
+}
